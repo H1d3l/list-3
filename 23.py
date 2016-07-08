@@ -13,16 +13,15 @@ def main():
 			print "FINALIZANDO PROGRAMA ..."
 			break
 
+def salario_liquido(n_horas_trabalhadas,n_dependentes,valor_horas,valor_dependente):
+	salario_liquido = (n_horas_trabalhadas*valor_horas)+(n_dependentes*valor_dependente)
+	print salario_liquido
 
-
-def salario_liquido(n_horas_trabalhadas,n_dependentes,valor_dependente=40.0,valor_horas = 12.00):
-	salario = (n_horas_trabalhadas*valor_horas)+(n_dependentes*valor_dependente)
-	return salario
-
-def descontos(salario_liquido,descont_ir=0.05,descont_inss = 0.085):
+def descontos(salario_liquido,descont_ir,descont_inss):
 	inss = salario_liquido*descont_inss
 	ir = salario_liquido*descont_ir
-	print "INSS: R$ %.2f" % inss 
-	print "IR - Imposto de Renda: R$ %.2f" % ir
+	print inss 
+	print ir
+
 if __name__ == '__main__':
 	main()
