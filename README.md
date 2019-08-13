@@ -1,1 +1,1 @@
-#Lista de questões para exercitar a linguagem python.
+# Lista de questões para exercitar a linguagem python.
